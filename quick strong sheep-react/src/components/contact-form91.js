@@ -41,12 +41,13 @@ const ContactForm91 = (props) => {
         </div>
         <div className="contact-form91-content2">
           <form
-            name="contact"
-            action="/"
-            method="POST"
-            data-netlify="true"
-            className="contact-form91-form thq-card"
-          >
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  action="/success"
+  className="contact-form91-form thq-card"
+>
+  <input type="hidden" name="form-name" value="contact" />
             <div className="contact-form91-input1">
               <label htmlFor="contact-form-9-name" className="thq-body-small">
                 Name
@@ -124,12 +125,12 @@ const ContactForm91 = (props) => {
             </div>
             <div className="contact-form91-checkbox1">
               <input
-                type="checkbox"
-                id="contact-form-9-check"
-                checked="true"
-                required="true"
-                className="thq-checkbox"
-              />
+  type="checkbox"
+  id="contact-form-9-check"
+  defaultChecked
+  required
+  className="thq-checkbox"
+/>
               <label htmlFor="contact-form-9-check" className="thq-body-small">
                 I accept the Terms
               </label>
